@@ -16,7 +16,7 @@ public class Sentence {
         return words;
     }
 
-    public void addWords(Word word) {
+    public void addWord(Word word) {
         words.add(word);
     }
 
