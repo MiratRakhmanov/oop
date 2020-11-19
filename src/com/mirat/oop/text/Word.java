@@ -1,20 +1,21 @@
 package com.mirat.oop.text;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Word {
 
-    private String word;
+    private List<Character> word;
 
-    public Word(String word) {
+    public Word(List<Character> word) {
         this.word = word;
     }
 
-    public String getWord() {
+    public List<Character> getWord() {
         return word;
     }
 
-    public void setWord(String word) {
+    public void setWord(List<Character> word) {
         this.word = word;
     }
 
@@ -33,6 +34,6 @@ public class Word {
 
     @Override
     public String toString() {
-        return word;
+        return word.toString();
     }
 }
