@@ -1,13 +1,14 @@
 package com.mirat.oop.text;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Text {
 
     private String header;
-    private Sentence sentence;
+    private List<Sentence> sentence;
 
-    public Text(String header, Sentence sentence) {
+    public Text(String header, List<Sentence> sentence) {
         this.header = header;
         this.sentence = sentence;
     }
@@ -20,11 +21,11 @@ public class Text {
         this.header = header;
     }
 
-    public Sentence getSentence() {
+    public List<Sentence> getSentence() {
         return sentence;
     }
 
-    public void setSentence(Sentence sentence) {
+    public void setSentence(List<Sentence> sentence) {
         this.sentence = sentence;
     }
 
@@ -44,6 +45,9 @@ public class Text {
 
     @Override
     public String toString() {
-        return String.format("%-7s%-100s%-7s%-100s", "Header: ", header, "| Text: ", sentence);
+        return "Text{" +
+                "header='" + header + '\'' +
+                ", sentence=" + sentence +
+                '}';
     }
 }
